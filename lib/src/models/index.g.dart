@@ -20,27 +20,20 @@ class _$AppStateSerializer implements StructuredSerializer<AppState> {
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       'isLoading',
-      serializers.serialize(object.isLoading,
-          specifiedType: const FullType(bool)),
+      serializers.serialize(object.isLoading, specifiedType: const FullType(bool)),
       'page',
       serializers.serialize(object.page, specifiedType: const FullType(int)),
       'movies',
-      serializers.serialize(object.movies,
-          specifiedType:
-              const FullType(BuiltList, const [const FullType(Movie)])),
+      serializers.serialize(object.movies, specifiedType: const FullType(BuiltList, const [const FullType(Movie)])),
     ];
     Object? value;
     value = object.id;
     if (value != null) {
-      result
-        ..add('id')
-        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+      result..add('id')..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.selectedMovie;
     if (value != null) {
-      result
-        ..add('selectedMovie')
-        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+      result..add('selectedMovie')..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -57,26 +50,20 @@ class _$AppStateSerializer implements StructuredSerializer<AppState> {
       final Object? value = iterator.current;
       switch (key) {
         case 'isLoading':
-          result.isLoading = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
+          result.isLoading = serializers.deserialize(value, specifiedType: const FullType(bool)) as bool;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.id = serializers.deserialize(value, specifiedType: const FullType(int)) as int?;
           break;
         case 'page':
-          result.page = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
+          result.page = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
           break;
         case 'selectedMovie':
-          result.selectedMovie = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.selectedMovie = serializers.deserialize(value, specifiedType: const FullType(int)) as int?;
           break;
         case 'movies':
           result.movies.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(BuiltList, const [const FullType(Movie)]))!
-              as BuiltList<Object?>);
+              specifiedType: const FullType(BuiltList, const [const FullType(Movie)]))! as BuiltList<Object?>);
           break;
       }
     }
@@ -92,42 +79,31 @@ class _$MovieSerializer implements StructuredSerializer<Movie> {
   final String wireName = 'Movie';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, Movie object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(Serializers serializers, Movie object, {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       'url',
       serializers.serialize(object.url, specifiedType: const FullType(String)),
       'title',
-      serializers.serialize(object.title,
-          specifiedType: const FullType(String)),
+      serializers.serialize(object.title, specifiedType: const FullType(String)),
       'year',
       serializers.serialize(object.year, specifiedType: const FullType(int)),
       'rating',
-      serializers.serialize(object.rating,
-          specifiedType: const FullType(double)),
+      serializers.serialize(object.rating, specifiedType: const FullType(double)),
       'genres',
-      serializers.serialize(object.genres,
-          specifiedType:
-              const FullType(BuiltList, const [const FullType(String)])),
+      serializers.serialize(object.genres, specifiedType: const FullType(BuiltList, const [const FullType(String)])),
       'summary',
-      serializers.serialize(object.summary,
-          specifiedType: const FullType(String)),
+      serializers.serialize(object.summary, specifiedType: const FullType(String)),
       'description_full',
-      serializers.serialize(object.fullDescription,
-          specifiedType: const FullType(String)),
+      serializers.serialize(object.fullDescription, specifiedType: const FullType(String)),
       'language',
-      serializers.serialize(object.language,
-          specifiedType: const FullType(String)),
+      serializers.serialize(object.language, specifiedType: const FullType(String)),
       'medium_cover_image',
-      serializers.serialize(object.image,
-          specifiedType: const FullType(String)),
+      serializers.serialize(object.image, specifiedType: const FullType(String)),
     ];
     Object? value;
     value = object.id;
     if (value != null) {
-      result
-        ..add('id')
-        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+      result..add('id')..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -144,46 +120,35 @@ class _$MovieSerializer implements StructuredSerializer<Movie> {
       final Object? value = iterator.current;
       switch (key) {
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.id = serializers.deserialize(value, specifiedType: const FullType(int)) as int?;
           break;
         case 'url':
-          result.url = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          result.url = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          result.title = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
           break;
         case 'year':
-          result.year = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
+          result.year = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
           break;
         case 'rating':
-          result.rating = serializers.deserialize(value,
-              specifiedType: const FullType(double)) as double;
+          result.rating = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
           break;
         case 'genres':
           result.genres.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(String)]))!
-              as BuiltList<Object?>);
+              specifiedType: const FullType(BuiltList, const [const FullType(String)]))! as BuiltList<Object?>);
           break;
         case 'summary':
-          result.summary = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          result.summary = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
           break;
         case 'description_full':
-          result.fullDescription = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          result.fullDescription = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
           break;
         case 'language':
-          result.language = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          result.language = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
           break;
         case 'medium_cover_image':
-          result.image = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          result.image = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
           break;
       }
     }
@@ -204,15 +169,9 @@ class _$AppState extends AppState {
   @override
   final BuiltList<Movie> movies;
 
-  factory _$AppState([void Function(AppStateBuilder)? updates]) =>
-      (new AppStateBuilder()..update(updates)).build();
+  factory _$AppState([void Function(AppStateBuilder)? updates]) => (new AppStateBuilder()..update(updates)).build();
 
-  _$AppState._(
-      {required this.isLoading,
-      this.id,
-      required this.page,
-      this.selectedMovie,
-      required this.movies})
+  _$AppState._({required this.isLoading, this.id, required this.page, this.selectedMovie, required this.movies})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(isLoading, 'AppState', 'isLoading');
     BuiltValueNullFieldError.checkNotNull(page, 'AppState', 'page');
@@ -220,8 +179,7 @@ class _$AppState extends AppState {
   }
 
   @override
-  AppState rebuild(void Function(AppStateBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+  AppState rebuild(void Function(AppStateBuilder) updates) => (toBuilder()..update(updates)).build();
 
   @override
   AppStateBuilder toBuilder() => new AppStateBuilder()..replace(this);
@@ -239,9 +197,7 @@ class _$AppState extends AppState {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc($jc($jc($jc(0, isLoading.hashCode), id.hashCode), page.hashCode),
-            selectedMovie.hashCode),
+    return $jf($jc($jc($jc($jc($jc(0, isLoading.hashCode), id.hashCode), page.hashCode), selectedMovie.hashCode),
         movies.hashCode));
   }
 
@@ -274,8 +230,7 @@ class AppStateBuilder implements Builder<AppState, AppStateBuilder> {
 
   int? _selectedMovie;
   int? get selectedMovie => _$this._selectedMovie;
-  set selectedMovie(int? selectedMovie) =>
-      _$this._selectedMovie = selectedMovie;
+  set selectedMovie(int? selectedMovie) => _$this._selectedMovie = selectedMovie;
 
   ListBuilder<Movie>? _movies;
   ListBuilder<Movie> get movies => _$this._movies ??= new ListBuilder<Movie>();
@@ -313,11 +268,9 @@ class AppStateBuilder implements Builder<AppState, AppStateBuilder> {
     try {
       _$result = _$v ??
           new _$AppState._(
-              isLoading: BuiltValueNullFieldError.checkNotNull(
-                  isLoading, 'AppState', 'isLoading'),
+              isLoading: BuiltValueNullFieldError.checkNotNull(isLoading, 'AppState', 'isLoading'),
               id: id,
-              page: BuiltValueNullFieldError.checkNotNull(
-                  page, 'AppState', 'page'),
+              page: BuiltValueNullFieldError.checkNotNull(page, 'AppState', 'page'),
               selectedMovie: selectedMovie,
               movies: movies.build());
     } catch (_) {
@@ -326,8 +279,7 @@ class AppStateBuilder implements Builder<AppState, AppStateBuilder> {
         _$failedField = 'movies';
         movies.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'AppState', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError('AppState', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -358,8 +310,7 @@ class _$Movie extends Movie {
   @override
   final String image;
 
-  factory _$Movie([void Function(MovieBuilder)? updates]) =>
-      (new MovieBuilder()..update(updates)).build();
+  factory _$Movie([void Function(MovieBuilder)? updates]) => (new MovieBuilder()..update(updates)).build();
 
   _$Movie._(
       {this.id,
@@ -379,15 +330,13 @@ class _$Movie extends Movie {
     BuiltValueNullFieldError.checkNotNull(rating, 'Movie', 'rating');
     BuiltValueNullFieldError.checkNotNull(genres, 'Movie', 'genres');
     BuiltValueNullFieldError.checkNotNull(summary, 'Movie', 'summary');
-    BuiltValueNullFieldError.checkNotNull(
-        fullDescription, 'Movie', 'fullDescription');
+    BuiltValueNullFieldError.checkNotNull(fullDescription, 'Movie', 'fullDescription');
     BuiltValueNullFieldError.checkNotNull(language, 'Movie', 'language');
     BuiltValueNullFieldError.checkNotNull(image, 'Movie', 'image');
   }
 
   @override
-  Movie rebuild(void Function(MovieBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+  Movie rebuild(void Function(MovieBuilder) updates) => (toBuilder()..update(updates)).build();
 
   @override
   MovieBuilder toBuilder() => new MovieBuilder()..replace(this);
@@ -415,11 +364,7 @@ class _$Movie extends Movie {
             $jc(
                 $jc(
                     $jc(
-                        $jc(
-                            $jc(
-                                $jc($jc($jc(0, id.hashCode), url.hashCode),
-                                    title.hashCode),
-                                year.hashCode),
+                        $jc($jc($jc($jc($jc(0, id.hashCode), url.hashCode), title.hashCode), year.hashCode),
                             rating.hashCode),
                         genres.hashCode),
                     summary.hashCode),
@@ -469,8 +414,7 @@ class MovieBuilder implements Builder<Movie, MovieBuilder> {
   set rating(double? rating) => _$this._rating = rating;
 
   ListBuilder<String>? _genres;
-  ListBuilder<String> get genres =>
-      _$this._genres ??= new ListBuilder<String>();
+  ListBuilder<String> get genres => _$this._genres ??= new ListBuilder<String>();
   set genres(ListBuilder<String>? genres) => _$this._genres = genres;
 
   String? _summary;
@@ -479,8 +423,7 @@ class MovieBuilder implements Builder<Movie, MovieBuilder> {
 
   String? _fullDescription;
   String? get fullDescription => _$this._fullDescription;
-  set fullDescription(String? fullDescription) =>
-      _$this._fullDescription = fullDescription;
+  set fullDescription(String? fullDescription) => _$this._fullDescription = fullDescription;
 
   String? _language;
   String? get language => _$this._language;
@@ -529,29 +472,21 @@ class MovieBuilder implements Builder<Movie, MovieBuilder> {
           new _$Movie._(
               id: id,
               url: BuiltValueNullFieldError.checkNotNull(url, 'Movie', 'url'),
-              title: BuiltValueNullFieldError.checkNotNull(
-                  title, 'Movie', 'title'),
-              year:
-                  BuiltValueNullFieldError.checkNotNull(year, 'Movie', 'year'),
-              rating: BuiltValueNullFieldError.checkNotNull(
-                  rating, 'Movie', 'rating'),
+              title: BuiltValueNullFieldError.checkNotNull(title, 'Movie', 'title'),
+              year: BuiltValueNullFieldError.checkNotNull(year, 'Movie', 'year'),
+              rating: BuiltValueNullFieldError.checkNotNull(rating, 'Movie', 'rating'),
               genres: genres.build(),
-              summary: BuiltValueNullFieldError.checkNotNull(
-                  summary, 'Movie', 'summary'),
-              fullDescription: BuiltValueNullFieldError.checkNotNull(
-                  fullDescription, 'Movie', 'fullDescription'),
-              language: BuiltValueNullFieldError.checkNotNull(
-                  language, 'Movie', 'language'),
-              image: BuiltValueNullFieldError.checkNotNull(
-                  image, 'Movie', 'image'));
+              summary: BuiltValueNullFieldError.checkNotNull(summary, 'Movie', 'summary'),
+              fullDescription: BuiltValueNullFieldError.checkNotNull(fullDescription, 'Movie', 'fullDescription'),
+              language: BuiltValueNullFieldError.checkNotNull(language, 'Movie', 'language'),
+              image: BuiltValueNullFieldError.checkNotNull(image, 'Movie', 'image'));
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'genres';
         genres.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'Movie', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError('Movie', _$failedField, e.toString());
       }
       rethrow;
     }

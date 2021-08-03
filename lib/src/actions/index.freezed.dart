@@ -74,8 +74,7 @@ mixin _$GetMovies {
 
 /// @nodoc
 abstract class $GetMoviesCopyWith<$Res> {
-  factory $GetMoviesCopyWith(GetMovies value, $Res Function(GetMovies) then) =
-      _$GetMoviesCopyWithImpl<$Res>;
+  factory $GetMoviesCopyWith(GetMovies value, $Res Function(GetMovies) then) = _$GetMoviesCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -89,15 +88,12 @@ class _$GetMoviesCopyWithImpl<$Res> implements $GetMoviesCopyWith<$Res> {
 
 /// @nodoc
 abstract class $GetMovies$CopyWith<$Res> {
-  factory $GetMovies$CopyWith(
-          GetMovies$ value, $Res Function(GetMovies$) then) =
-      _$GetMovies$CopyWithImpl<$Res>;
+  factory $GetMovies$CopyWith(GetMovies$ value, $Res Function(GetMovies$) then) = _$GetMovies$CopyWithImpl<$Res>;
   $Res call({int page});
 }
 
 /// @nodoc
-class _$GetMovies$CopyWithImpl<$Res> extends _$GetMoviesCopyWithImpl<$Res>
-    implements $GetMovies$CopyWith<$Res> {
+class _$GetMovies$CopyWithImpl<$Res> extends _$GetMoviesCopyWithImpl<$Res> implements $GetMovies$CopyWith<$Res> {
   _$GetMovies$CopyWithImpl(GetMovies$ _value, $Res Function(GetMovies$) _then)
       : super(_value, (v) => _then(v as GetMovies$));
 
@@ -134,18 +130,15 @@ class _$GetMovies$ implements GetMovies$ {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is GetMovies$ &&
-            (identical(other.page, page) ||
-                const DeepCollectionEquality().equals(other.page, page)));
+            (identical(other.page, page) || const DeepCollectionEquality().equals(other.page, page)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(page);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(page);
 
   @JsonKey(ignore: true)
   @override
-  $GetMovies$CopyWith<GetMovies$> get copyWith =>
-      _$GetMovies$CopyWithImpl<GetMovies$>(this, _$identity);
+  $GetMovies$CopyWith<GetMovies$> get copyWith => _$GetMovies$CopyWithImpl<GetMovies$>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -201,24 +194,20 @@ abstract class GetMovies$ implements GetMovies {
 
   int get page => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GetMovies$CopyWith<GetMovies$> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetMovies$CopyWith<GetMovies$> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GetMoviesSuccessfulCopyWith<$Res> {
-  factory $GetMoviesSuccessfulCopyWith(
-          GetMoviesSuccessful value, $Res Function(GetMoviesSuccessful) then) =
+  factory $GetMoviesSuccessfulCopyWith(GetMoviesSuccessful value, $Res Function(GetMoviesSuccessful) then) =
       _$GetMoviesSuccessfulCopyWithImpl<$Res>;
   $Res call({List<Movie> movies});
 }
 
 /// @nodoc
-class _$GetMoviesSuccessfulCopyWithImpl<$Res>
-    extends _$GetMoviesCopyWithImpl<$Res>
+class _$GetMoviesSuccessfulCopyWithImpl<$Res> extends _$GetMoviesCopyWithImpl<$Res>
     implements $GetMoviesSuccessfulCopyWith<$Res> {
-  _$GetMoviesSuccessfulCopyWithImpl(
-      GetMoviesSuccessful _value, $Res Function(GetMoviesSuccessful) _then)
+  _$GetMoviesSuccessfulCopyWithImpl(GetMoviesSuccessful _value, $Res Function(GetMoviesSuccessful) _then)
       : super(_value, (v) => _then(v as GetMoviesSuccessful));
 
   @override
@@ -254,13 +243,11 @@ class _$GetMoviesSuccessful implements GetMoviesSuccessful {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is GetMoviesSuccessful &&
-            (identical(other.movies, movies) ||
-                const DeepCollectionEquality().equals(other.movies, movies)));
+            (identical(other.movies, movies) || const DeepCollectionEquality().equals(other.movies, movies)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(movies);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(movies);
 
   @JsonKey(ignore: true)
   @override
@@ -321,14 +308,12 @@ abstract class GetMoviesSuccessful implements GetMovies {
 
   List<Movie> get movies => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GetMoviesSuccessfulCopyWith<GetMoviesSuccessful> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetMoviesSuccessfulCopyWith<GetMoviesSuccessful> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GetMoviesErrorCopyWith<$Res> {
-  factory $GetMoviesErrorCopyWith(
-          GetMoviesError value, $Res Function(GetMoviesError) then) =
+  factory $GetMoviesErrorCopyWith(GetMoviesError value, $Res Function(GetMoviesError) then) =
       _$GetMoviesErrorCopyWithImpl<$Res>;
   $Res call({Object error});
 }
@@ -336,8 +321,7 @@ abstract class $GetMoviesErrorCopyWith<$Res> {
 /// @nodoc
 class _$GetMoviesErrorCopyWithImpl<$Res> extends _$GetMoviesCopyWithImpl<$Res>
     implements $GetMoviesErrorCopyWith<$Res> {
-  _$GetMoviesErrorCopyWithImpl(
-      GetMoviesError _value, $Res Function(GetMoviesError) _then)
+  _$GetMoviesErrorCopyWithImpl(GetMoviesError _value, $Res Function(GetMoviesError) _then)
       : super(_value, (v) => _then(v as GetMoviesError));
 
   @override
@@ -373,13 +357,11 @@ class _$GetMoviesError implements GetMoviesError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is GetMoviesError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
 
   @JsonKey(ignore: true)
   @override
@@ -440,8 +422,7 @@ abstract class GetMoviesError implements GetMovies {
 
   Object get error => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GetMoviesErrorCopyWith<GetMoviesError> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetMoviesErrorCopyWith<GetMoviesError> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -463,21 +444,18 @@ mixin _$SetSelectedMovie {
   int get idMovie => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SetSelectedMovieCopyWith<SetSelectedMovie> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SetSelectedMovieCopyWith<SetSelectedMovie> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SetSelectedMovieCopyWith<$Res> {
-  factory $SetSelectedMovieCopyWith(
-          SetSelectedMovie value, $Res Function(SetSelectedMovie) then) =
+  factory $SetSelectedMovieCopyWith(SetSelectedMovie value, $Res Function(SetSelectedMovie) then) =
       _$SetSelectedMovieCopyWithImpl<$Res>;
   $Res call({int idMovie});
 }
 
 /// @nodoc
-class _$SetSelectedMovieCopyWithImpl<$Res>
-    implements $SetSelectedMovieCopyWith<$Res> {
+class _$SetSelectedMovieCopyWithImpl<$Res> implements $SetSelectedMovieCopyWith<$Res> {
   _$SetSelectedMovieCopyWithImpl(this._value, this._then);
 
   final SetSelectedMovie _value;
@@ -498,21 +476,17 @@ class _$SetSelectedMovieCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class $SetSelectedMovie$CopyWith<$Res>
-    implements $SetSelectedMovieCopyWith<$Res> {
-  factory $SetSelectedMovie$CopyWith(
-          SetSelectedMovie$ value, $Res Function(SetSelectedMovie$) then) =
+abstract class $SetSelectedMovie$CopyWith<$Res> implements $SetSelectedMovieCopyWith<$Res> {
+  factory $SetSelectedMovie$CopyWith(SetSelectedMovie$ value, $Res Function(SetSelectedMovie$) then) =
       _$SetSelectedMovie$CopyWithImpl<$Res>;
   @override
   $Res call({int idMovie});
 }
 
 /// @nodoc
-class _$SetSelectedMovie$CopyWithImpl<$Res>
-    extends _$SetSelectedMovieCopyWithImpl<$Res>
+class _$SetSelectedMovie$CopyWithImpl<$Res> extends _$SetSelectedMovieCopyWithImpl<$Res>
     implements $SetSelectedMovie$CopyWith<$Res> {
-  _$SetSelectedMovie$CopyWithImpl(
-      SetSelectedMovie$ _value, $Res Function(SetSelectedMovie$) _then)
+  _$SetSelectedMovie$CopyWithImpl(SetSelectedMovie$ _value, $Res Function(SetSelectedMovie$) _then)
       : super(_value, (v) => _then(v as SetSelectedMovie$));
 
   @override
@@ -548,13 +522,11 @@ class _$SetSelectedMovie$ implements SetSelectedMovie$ {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is SetSelectedMovie$ &&
-            (identical(other.idMovie, idMovie) ||
-                const DeepCollectionEquality().equals(other.idMovie, idMovie)));
+            (identical(other.idMovie, idMovie) || const DeepCollectionEquality().equals(other.idMovie, idMovie)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(idMovie);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(idMovie);
 
   @JsonKey(ignore: true)
   @override
@@ -569,6 +541,5 @@ abstract class SetSelectedMovie$ implements SetSelectedMovie {
   int get idMovie => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  $SetSelectedMovie$CopyWith<SetSelectedMovie$> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SetSelectedMovie$CopyWith<SetSelectedMovie$> get copyWith => throw _privateConstructorUsedError;
 }
