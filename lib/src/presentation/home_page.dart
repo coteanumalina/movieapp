@@ -4,7 +4,6 @@ import 'package:movieapp/src/actions/index.dart';
 import 'package:movieapp/src/containers/is_loading_container.dart';
 import 'package:movieapp/src/containers/movies_container.dart';
 import 'package:movieapp/src/models/index.dart';
-import 'package:redux/redux.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
