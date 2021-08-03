@@ -9,7 +9,7 @@ part of actions;
 
 T _$identity<T>(T value) => value;
 
-final _privateConstructorUsedError = UnsupportedError(
+final UnsupportedError _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
@@ -36,7 +36,7 @@ class _$GetMoviesTearOff {
 }
 
 /// @nodoc
-const $GetMovies = _$GetMoviesTearOff();
+const _$GetMoviesTearOff $GetMovies = _$GetMoviesTearOff();
 
 /// @nodoc
 mixin _$GetMovies {
@@ -95,7 +95,7 @@ abstract class $GetMovies$CopyWith<$Res> {
 /// @nodoc
 class _$GetMovies$CopyWithImpl<$Res> extends _$GetMoviesCopyWithImpl<$Res> implements $GetMovies$CopyWith<$Res> {
   _$GetMovies$CopyWithImpl(GetMovies$ _value, $Res Function(GetMovies$) _then)
-      : super(_value, (v) => _then(v as GetMovies$));
+      : super(_value, (GetMovies v) => _then(v as GetMovies$));
 
   @override
   GetMovies$ get _value => super._value as GetMovies$;
@@ -208,7 +208,7 @@ abstract class $GetMoviesSuccessfulCopyWith<$Res> {
 class _$GetMoviesSuccessfulCopyWithImpl<$Res> extends _$GetMoviesCopyWithImpl<$Res>
     implements $GetMoviesSuccessfulCopyWith<$Res> {
   _$GetMoviesSuccessfulCopyWithImpl(GetMoviesSuccessful _value, $Res Function(GetMoviesSuccessful) _then)
-      : super(_value, (v) => _then(v as GetMoviesSuccessful));
+      : super(_value, (GetMovies v) => _then(v as GetMoviesSuccessful));
 
   @override
   GetMoviesSuccessful get _value => super._value as GetMoviesSuccessful;
@@ -322,7 +322,7 @@ abstract class $GetMoviesErrorCopyWith<$Res> {
 class _$GetMoviesErrorCopyWithImpl<$Res> extends _$GetMoviesCopyWithImpl<$Res>
     implements $GetMoviesErrorCopyWith<$Res> {
   _$GetMoviesErrorCopyWithImpl(GetMoviesError _value, $Res Function(GetMoviesError) _then)
-      : super(_value, (v) => _then(v as GetMoviesError));
+      : super(_value, (GetMovies v) => _then(v as GetMoviesError));
 
   @override
   GetMoviesError get _value => super._value as GetMoviesError;
@@ -437,7 +437,7 @@ class _$SetSelectedMovieTearOff {
 }
 
 /// @nodoc
-const $SetSelectedMovie = _$SetSelectedMovieTearOff();
+const _$SetSelectedMovieTearOff $SetSelectedMovie = _$SetSelectedMovieTearOff();
 
 /// @nodoc
 mixin _$SetSelectedMovie {
@@ -487,7 +487,7 @@ abstract class $SetSelectedMovie$CopyWith<$Res> implements $SetSelectedMovieCopy
 class _$SetSelectedMovie$CopyWithImpl<$Res> extends _$SetSelectedMovieCopyWithImpl<$Res>
     implements $SetSelectedMovie$CopyWith<$Res> {
   _$SetSelectedMovie$CopyWithImpl(SetSelectedMovie$ _value, $Res Function(SetSelectedMovie$) _then)
-      : super(_value, (v) => _then(v as SetSelectedMovie$));
+      : super(_value, (SetSelectedMovie v) => _then(v as SetSelectedMovie$));
 
   @override
   SetSelectedMovie$ get _value => super._value as SetSelectedMovie$;
